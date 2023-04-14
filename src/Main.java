@@ -1,22 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Conta conta = new Conta("Santander", "906-6", "12345-0", "Poupança", 10.453f, 80.000f);
-        Funcionario funcionario = new Funcionario(123456, "Moises", "Bate-Coraçao", "71 98373738", "Moiseschupatoda@hotmail.com", conta);
 
+    Funcionario funcionario = new Funcionario ("1244124", "Igor", "15.000", Genero.MASCULINO, Setor.FINANCEIRO, 20);
 
-        System.out.println("---FUNCIONARIOS");
-        System.out.println("Nome: " +funcionario.getNome());
-        System.out.println("E-mail: " +funcionario.getEmail());
-        System.out.println("Endereço: " +funcionario.getEndereco());
-        System.out.println("Telefone: " +funcionario.getTelefone());
-        System.out.println("Codigo: " +funcionario.getCodigoFuncionario());
-
-        System.out.println("---MAIS INFORMAÇ�ES DO FUNCIONARIO");
-        System.out.println("Banco: " +funcionario.getBanco().getBanco());
-        System.out.println("Agencia: " +funcionario.getBanco().getAgencia());
-        System.out.println("Numero da conta: " +funcionario.getBanco().getNumeroConta());
-        System.out.println("Tipo da conta: " +funcionario.getBanco().getTipoConta());
-        System.out.println("Saldo: " +funcionario.getBanco().getSaldoAtual());
-        System.out.println("Limite disponivel: " +funcionario.getBanco().getLimiteDisponivel());
+        System.out.println("Nome do funcionário(a): " +funcionario.getNome());
+        System.out.println("ID do funcionário(a): " +funcionario.getId());
+        System.out.println("Salário do funcionário(a): " +funcionario.getSalario());
+        System.out.println("Idade do funcionário(a): " +funcionario.getIdade());
+        System.out.println("Gênero do funcionário(a): " +funcionario.getGenero());
+        System.out.println("Setor do funcionário(a): " +funcionario.getSetor());
     }
 }

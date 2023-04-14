@@ -1,27 +1,26 @@
 public class Funcionario {
-    private int CodigoFuncionario;
+    private String id;
     private String nome;
-    private String endereco;
-    private String telefone;
-    private String email;
+    private String salario;
+    private Genero genero;
+    private Setor setor;
+    private int idade;
 
-    private Conta banco;
-
-    public Funcionario(int codigoFuncionario, String nome, String endereco, String telefone, String email, Conta banco) {
-        CodigoFuncionario = codigoFuncionario;
+    public Funcionario(String id, String nome, String salario, Genero genero, Setor setor, int idade) {
+        this.id = id;
         this.nome = nome;
-        this.endereco = endereco;
-        this.telefone = telefone;
-        this.email = email;
-        this.banco = banco;
+        this.salario = salario;
+        this.genero = genero;
+        this.setor = setor;
+        this.idade = idade;
     }
 
-    public int getCodigoFuncionario() {
-        return CodigoFuncionario;
+    public String getId() {
+        return id;
     }
 
-    public void setCodigoFuncionario(int codigoFuncionario) {
-        CodigoFuncionario = codigoFuncionario;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -32,35 +31,35 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getSalario() {
+        return salario;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setSalario(String salario) {
+        this.salario = salario;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public Genero getGenero() {
+        return genero;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
 
-    public String getEmail() {
-        return email;
+    public Setor getSetor() {
+        return setor;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSetor(Setor setor) {
+        this.setor = setor;
     }
 
-    public Conta getBanco() {
-        return banco;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setBanco(Conta banco) {
-        this.banco = banco;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 }
