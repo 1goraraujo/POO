@@ -16,6 +16,10 @@ public class Pessoa {
         this.email = email;
         this.endereco = endereco;
     }
+    
+    public int getIdade(){
+        return Period.between(dataNascimento, LocalDate.now()).getYears();
+    }
 
     public int getId() {
         return id;
