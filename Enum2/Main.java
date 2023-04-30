@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Id: " +pessoa.getId());
         System.out.println("\nNome: " +pessoa.getNome());
         System.out.println("Data de nascimento: " +pessoa.getDataNascimento());
+        System.out.println("Idade: " +pessoa.getIdade());
         System.out.println("Telefone: " +pessoa.getTelefone());
         System.out.println("Email: " +pessoa.getEmail());
         System.out.println("Endereco: " +endereco.getLogradouro());
